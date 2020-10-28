@@ -66,4 +66,32 @@ public class TestPrintMax
 		Float max = 9.9f;
 		Assert.assertEquals(max, result);
 	}
+	
+	//For String array
+	@Test
+	public void whenGivenStringArray_WithMaxNumber_AtFirstPosition()
+	{
+		String[] array = {"Zebra", "Lion", "Pig"};
+		String result = PrintMax.getMax(array);
+		String max = "Zebra";
+		Assert.assertEquals(max, result);
+	}
+	
+	@Test
+	public void whenGivenStringArray_WithMaxNumber_AtSecondtPosition()
+	{
+		String[] array = {"Lion", "Zebra", "Pig"};
+		String result = PrintMax.getMax(array);
+		String max = "Zebra";
+		Assert.assertEquals(max, result);
+	}
+	
+	@Test
+	public void whenGivenStringArray_WithMaxNumber_AtThirdtPosition()
+	{
+		String[] array = {"Lion", "Pig", "Zebra"};
+		String result = PrintMax.getMax(array);
+		String max = "Zebra";
+		Assert.assertEquals(max, result);
+	}
 }
