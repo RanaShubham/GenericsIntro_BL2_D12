@@ -14,27 +14,24 @@ public class TestPrintMax
 	@Test
 	public void whenGivenIntegerArray_WithMaxNumber_AtFirstPosition()
 	{
-		Integer[] array = {99, 9, 0};
-		Integer result = PrintMax.getMax(array);
-		Integer max = 99;
+		Integer result = (Integer) new PrintMax(7,4,5).getMax();
+		Integer max = 7;
 		Assert.assertEquals(max, result);
 	}
 	
 	@Test
 	public void whenGivenIntegerArray_WithMaxNumber_AtSecondPosition()
 	{
-		Integer[] array = {9, 99, 0};
-		Integer result = PrintMax.getMax(array);
-		Integer max = 99;
+		Integer result = (Integer) new PrintMax(7,9,5).getMax();
+		Integer max = 9;
 		Assert.assertEquals(max, result);
 	}
 	
 	@Test
 	public void whenGivenIntegerArray_WithMaxNumber_AtThirdPosition()
 	{
-		Integer[] array = {9, 9, 99};
-		Integer result = PrintMax.getMax(array);
-		Integer max = 99;
+		Integer result = (Integer) new PrintMax(7,9,15).getMax();
+		Integer max = 15;
 		Assert.assertEquals(max, result);
 	}
 	
@@ -43,8 +40,7 @@ public class TestPrintMax
 	@Test
 	public void whenGivenFloatArray_WithMaxNumber_AtFirstPosition()
 	{
-		Float[] array = {9.9f, 0.9f, 0.0f};
-		Float result = PrintMax.getMax(array);
+		Float result = (Float) new PrintMax(9.9f, 0.9f, 0.0f).getMax();
 		Float max = 9.9f;
 		Assert.assertEquals(max, result);
 	}
@@ -52,8 +48,7 @@ public class TestPrintMax
 	@Test
 	public void whenGivenFloatArray_WithMaxNumber_AtSecondPosition()
 	{
-		Float[] array = {0.9f, 9.9f, 0.0f};
-		Float result = PrintMax.getMax(array);
+		Float result = (Float) new PrintMax(1.9f, 9.9f, 0.0f).getMax();
 		Float max = 9.9f;
 		Assert.assertEquals(max, result);
 	}
@@ -61,8 +56,7 @@ public class TestPrintMax
 	@Test
 	public void whenGivenFloatArray_WithMaxNumber_AtThirdPosition()
 	{
-		Float[] array = {0.9f, 0.9f, 9.9f};
-		Float result = PrintMax.getMax(array);
+		Float result = (Float) new PrintMax(1.9f, 0.9f, 9.9f).getMax();
 		Float max = 9.9f;
 		Assert.assertEquals(max, result);
 	}
@@ -71,8 +65,7 @@ public class TestPrintMax
 	@Test
 	public void whenGivenStringArray_WithMaxNumber_AtFirstPosition()
 	{
-		String[] array = {"Zebra", "Lion", "Pig"};
-		String result = PrintMax.getMax(array);
+		String result = (String) new PrintMax("Zebra", "Lion", "Pig").getMax();
 		String max = "Zebra";
 		Assert.assertEquals(max, result);
 	}
@@ -80,8 +73,7 @@ public class TestPrintMax
 	@Test
 	public void whenGivenStringArray_WithMaxNumber_AtSecondtPosition()
 	{
-		String[] array = {"Lion", "Zebra", "Pig"};
-		String result = PrintMax.getMax(array);
+		String result = (String) new PrintMax("Lion", "Zebra", "Pig").getMax();
 		String max = "Zebra";
 		Assert.assertEquals(max, result);
 	}
@@ -89,8 +81,7 @@ public class TestPrintMax
 	@Test
 	public void whenGivenStringArray_WithMaxNumber_AtThirdtPosition()
 	{
-		String[] array = {"Lion", "Pig", "Zebra"};
-		String result = PrintMax.getMax(array);
+		String result = (String) new PrintMax("Pig", "Lion", "Zebra").getMax();
 		String max = "Zebra";
 		Assert.assertEquals(max, result);
 	}
