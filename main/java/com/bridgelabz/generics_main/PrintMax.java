@@ -30,17 +30,18 @@ public class PrintMax<T extends Comparable<T>> {
 		return PrintMax.getMax(this.inputArr);
 	}
 	
+	//Method to print maximum number
 	private void printMax(T max) 
 	{
 		System.out.println(max);
 	}
 
+	//Main method
 	public static void main(String[] args) 
 	{
 		new PrintMax<Integer>(3, 4, 5, 9, 238).getMax();
 		new PrintMax<Float>(3.5f,4.5f,5.5f, 2000.0f).getMax();
 		new PrintMax<String>("Apple","Pineapple","Hyena","Zebra").getMax();
-
 	}
 
 }
