@@ -73,7 +73,7 @@ public class TestPrintMax
 	@Test
 	public void whenGivenStringArray_WithMaxNumber_AtSecondtPosition()
 	{
-		String result = (String) new PrintMax("Lion", "Zebra", "Pig").getMax();
+		String result = (String) new PrintMax("Lion", "Zebra", "Pig", "Hyena").getMax();
 		String max = "Zebra";
 		Assert.assertEquals(max, result);
 	}
